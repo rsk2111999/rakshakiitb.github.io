@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Team Rakshak</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Autonomous Drone Team">
+<meta name="keywords" content="auvsi,iitb,rakshak">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<;ink rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="web.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
+body,html {
+    height:100%;
+    line-height:1.8;
+}
+
+pre {
+    display: block;
+    font-family: arial;
+    white-space: pre;
+    margin: 1em 0;
+} 
+
+h2 {background:#838383;color:white;text-align:center;border-radius: 25px;}
+h3 {background:#838383;color:white;text-align:center;border-radius: 25px;}
+body {background:#f1f1f1;font-size:14;}
+
+h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:#4f5aae;}
+
+
+.para {margin:0 20%;line-height:1.25;text-align:center;font-size: 1.5em;font-family:Helvetica;}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <img src="logo.png" height='80' width='80'>&nbsp<img src="iitb.png" height='80' width='80'>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a>
+      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a>
+      <a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+  <a href="homefinal.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+<br><br><br><br>
+<img src="plane2.jpg" width=100%>
+
+<h2 align="center">SAE</h2>
+<div class="w3-row">
+  <div class="w3-third w3-container">
+    <img src="planes\second.jpg" width="100%">
+  </div>
+  <div class="w3-third w3-container">
+    <h3>Perfomance</h3><pre>
+    Ground Roll Distance : 100 m
+    Cruise Speed             : 18 m/s
+    Stall Speed                : 9 m/s 
+  </div>
+  <div class="w3-third w3-container">
+    <h3>Dimensions</h3><pre>
+    Length        : 0.96 m
+    Wing Span : 3 m/s
+    Wing Area  : 1.45 m<sup>2</sup> 
+    Weight       : 13 kg
+  </div>
+</div>
+
+<h2 align="center">Sandy 2.0</h2>
+<div class="w3-row">
+  <div class="w3-third w3-container">
+    <img src="planes\sandy2.0.jpg" width="100%">
+  </div>
+  <div class="w3-third w3-container">
+    <h3>Perfomance</h3><pre>
+    Ground Roll Distance : 80 m   
+    Cruise Speed             : 12 m/s 
+    Stall Speed                : 8 m/s  
+    T/W                           : 0.8 
+  </div>
+  <div class="w3-third w3-container">
+    <h3>Dimensions</h3><pre>
+    Length        : 1.45 m   
+    Wing Span : 1.38 m/s
+    Wing Area  : 0.32 m<sup>2</sup>  
+    Weight        : 2 kg  
+  </div>
+</div>
+
+<h2 align="center">Skywalker</h2>
+<div class="w3-row">
+  <div class="w3-third w3-container">
+    <img src="planes\skywalker.jpg" width="100%">
+  </div>
+  <div class="w3-third w3-container">
+    <h3>Perfomance</h3>
+<pre>
+    Ground Roll Distance : 100 m 
+    Cruise Speed              : 12 m/s
+    Stall Speed                 : 9 m/s
+    T/W                            : 0.8 
+  </div>
+  <div class="w3-third w3-container">
+    <h3>Dimensions</h3><pre>
+    Length        : 2 m
+    Wing Span : 2.9 m/s
+    Wing Area  : 1.38 m<sup>2</sup> 
+    Weight        : 8 kg</pre>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-black">
+    <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
+           Email: rakshak.uavs@gmail.com<br>
+           Phone No: +91-8451855366
+    </div> 
+                                                                
+    <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
+    <div align="center" class='w3-third'>
+        <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="logo\facebook1.png" width=40px height=40px></a>
+        <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="logo\youtube1.png" width=40px height=40px></a>
+        <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="logo\linkedin1.png" width=40px height=40px></a>
+    </div>
+</html>
+</body>
+</html>
+</html>

@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Team Rakshak</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Autonomous Drone Team">
+<meta name="keywords" content="auvsi,iitb,rakshak">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="web.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
+body,html {
+    height:100%;
+    line-height:1.8;
+}
+
+
+h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:red;}
+
+.para {margin:0 20%;line-height:1.25;text-align:center;font-size: 1.5em;font-family:Helvetica;}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <img src="logo.png" height='80' width='80'>&nbsp<img src="iitb.png" height='80' width='80'>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a>
+      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a>
+      <a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+  <a href="homefinal.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+<svg height="50" width="100%">
+  <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+</svg>
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+
+ <div class="mySlides fade">
+    <img src="gallery\6.jpg" style="width:100%">
+    <div class="ctext">Premier IC Engine</div>
+  </div> 
+
+<div class="mySlides fade">
+    <img src="gallery\3.jpg" style="width:100%">
+    <div class="ctext">Sandy returning to Base</div>
+  </div>
+ 
+<div class="mySlides fade">
+    <img src="gallery\2.jpg" style="width:100%">
+    <div class="ctext">Fuselage Truss Structure</div>
+  </div>
+ 
+ <div class="mySlides fade">
+    <img src="gallery\1y.jpg" style="width:100%">
+    <div class="ctext">Lucky - Ready to Fly</div>
+  </div>
+
+ <div class="mySlides fade">
+    <img src="gallery\2r.jpg" style="width:100%">
+    <div class="ctext">Interaction with leading Entrepreneurs</div>
+ </div>
+ 
+ <div class="mySlides fade">
+    <img src="gallery\3r.jpg" style="width:100%">
+    <div class="ctext">Interaction with future minds</div>
+  </div> 
+
+<div class="mySlides fade">
+    <img src="gallery\1.jpg" style="width:100%">
+    <div class="ctext">Project Display at Tech RnD</div>
+  </div>
+
+ <div class="mySlides fade">
+    <img src="gallery\5r.jpg" style="width:100%">
+    <div class="ctext">Presented with Souvenir</div>
+  </div>
+
+ <div class="mySlides fade">
+    <img src="gallery\11.jpg" style="width:100%">
+    <div class="ctext">Mission Accomplished - SAE!</div>
+  </div> 
+
+ 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+<span class="dot" onclick="currentSlide(5)"></span> 
+<span class="dot" onclick="currentSlide(6)"></span> 
+<span class="dot" onclick="currentSlide(7)"></span> 
+<span class="dot" onclick="currentSlide(8)"></span> 
+<span class="dot" onclick="currentSlide(9)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="w3-row-padding w3-black">
+    <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
+           Email: rakshak.uavs@gmail.com<br>
+           Phone No: +91-8451855366
+    </div> 
+                                                                
+    <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
+    <div align="center" class='w3-third'>
+        <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="logo\facebook1.png" width=40px height=40px></a>
+        <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="logo\youtube1.png" width=40px height=40px></a>
+        <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="logo\linkedin1.png" width=40px height=40px></a>
+    </div>
+</html>
+</html>
