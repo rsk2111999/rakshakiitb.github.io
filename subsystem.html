@@ -1,256 +1,248 @@
 ﻿<!DOCTYPE html>
 <html>
-
-<head>
-<title>Team Rakshak</title>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Autonomous Drone Team">
-<meta name="keywords" content="auvsi,iitb,rakshak">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="web.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
-h1,p{font-weight: bold;}
-
-body {
-    height:100%;
-    line-height:1.8;
-    background:#f1f1f1;
-}
-
-.topic{background:#838383;color:white;}
-.exp{background:white;}
-
-ul{
- list-style:square;
-}
-
-h1 {padding:70px 10px 0 10px;text-align:center;font-size: 2.5em;color:red;}
-
-.para {line-height:1;text-align:center;font-size: 1.5em;}
-
-.w3-bar .w3-button {
-    padding: 16px;
-}
-
-a:active {
-    color: white;
-    background-color: black;
-}
-
-@media only screen and (max-width: 850px) {
-    /* For mobile phones: */
-    [class*="image-set"] {
-        width: 100%;
-    }
-
-</style>
-
-</head>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
-    <img src="logo.png" height='5%' width = 5%>&nbsp<img src="iitb.png" height='5%' width=5%>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a>
-      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a>
-      <a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a>
-      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-   
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<div class="w3-top w3-hide-large w3-hide-medium">
-  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
-    <img src="logo.png" height='80' width = 80>&nbsp<img src="iitb.png" height='80' width=80>
- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
-  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
-  <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<script>
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-<br><br><br><br><br>
-<img src="sub_cover_3.jpg" width=100%>
-
-
-<div class="w3-row-padding w3-padding-64">
-<div class="w3-twothird w3-margin-bottom w3-hover-shadow bod">
-      <ul class="w3-ul w3-border exp">
-        <li class="w3-theme topic">
-          <p class="w3-xlarge topic">Aerodynamics</p>
-        </li>
-        <li>The Aerodynamic subsystem is responsible for the design and optimisation of the aircraft. This subsystem captures and models in accordance with the user requirements, design, analyse and optimize the aircraft. This subsystem is categorised as such:</li>
-            <ul><li><b>Conceptual Sizing</b> - Study the user requirements and accordingly design the nascent framework of the plane.</li>
-                <li><b>Flight Dynamics</b> - Study the performance, stability and controls of the aircraft and accordingly change the design parameters to best suit the desired objectives.</li>
-                <li><b>Analysis</b> - Simulate and analyse the aircraft in virtual settings via dedicated softwares and optimize the design while collating with live test results.</li>
-           </ul>
-      </ul>
-</div>
-<div class="w3-third w3-margin-bottom">
-      <img src="subsystem\aero2.png" width = 100%>
-      <img src="subsystem\aero1.jpg" width = 100%>
-</div>
-
-
-
-<div class="w3-twothird w3-margin-bottom bod">
-      <ul class="w3-ul w3-border w3-hover-shadow exp">
-        <li class="w3-theme-l2 topic">
-          <p class="w3-xlarge">Structures</p>
-        </li>
-        <li>Structures is responsible for</li> 
-        <ul><li><b>CAD design</b> - Modelling each component of the plane and assembling them, to help in manufacturing, 
-                structural and aerodynamic analysis, final assembly. </li> 
-        <li><b>Stress analysis</b> - Each component is structurally analyzed to ensure none of them break or deform out of bounds due to the stresses in flight.</li>
-        <li><b>Material Selection</b> - Appropriate materials are selected to ensure components have enough strength to withstand the loads 
-            while being as light as possible</li>
-        <li><b>Wing load testing</b> - Wings undergo ground testing to ensure they do not break under the large loads they are subjected to in flight</li> </ul>
-        </li>
-      </ul>
-</div>
-<div class="w3-third w3-margin-bottom">
-      <img src="subsystem\structures.jpg" width = 100%>
-</div>
-
-<div class="w3-twothird w3-margin-bottom bod">
-      <ul class="w3-ul w3-border w3-hover-shadow exp">
-        <li class="w3-theme-l2 topic">
-          <p class="w3-xlarge">Software</p>
-        </li>
-
-        <li>The Software subsystem is responsible for the onboard processing of the images collected during the mission. 
-        This includes identifying the potential targets, classifying them and geotagging them for future purpose. <br>The subsystem is categorized into:</li>
-        <ul><li><b>Image Processing and Machine Learning</b> - Identifying the potential targets and classifying them with precision</li>
-            <li><b>Parallel Programming</b> - Responsible for faster implementation of the image processing algorithms </li>
-            <li><b>Interoperability</b> - Responsible for autonomous update of detected targets to the server</li></ul>
-        </li>
-      </ul>
-</div>
-<div class="w3-third w3-margin-bottom">
-      <img src="subsystem\ip.png" width = 100%>
-</div>
-
-<div class="w3-twothird w3-margin-bottom bod">
-      <ul class="w3-ul w3-border w3-hover-shadow exp">
-        <li class="w3-theme-l2 topic">
-          <p class="w3-xlarge">Controls and Communication</p>
-        </li>
-	<li>
-		The subsystem conducts regular test for sensors calibration and adjusting the gains 
-        of the controller. The UAV is given various flight paths during the test assess the performance 
-        of the UAV and according modify the control parameters to achieve acceptable performance.
-	Communication is responsible for proper communication between plane and ground control station 
-        It is also responsible for interoperability i.e, autonomous upload of collected data to remote server.<br>
-	The aim of this subsystem is to achieve the following for an UAV:
-	</li>
-        <ul><li>Autonomous Navigation</li>
-        <li>Autonomous Takeoff</li>
-        <li>Autonomous Landing </li>
-        <li>Obstacle Avoidance</li>
-	<li>Uninterrupted Communication</li>
-	</ul>   
-        </li>
-      </ul>
-</div>
-<div class="w3-third w3-margin-bottom">
-      <img src="subsystem\comm.jpg" width = 75%>
-      <img src="subsystem\control.jpg" width = 75%>
-</div>
-
-<div class="w3-twothird w3-margin-bottom bod">
-      <ul class="w3-ul w3-border w3-hover-shadow exp">
-        <li class="w3-theme-l2 topic">
-          <p class="w3-xlarge">Propulsion</p>
-        </li>
-        <li class="exp">The Propulsion subsystem involves in the selection of a suitable power plant for the UAS(Unmanned Aerial System) in 
-        accordance with the requirements of the other major subsystems. The subsystem focuses on optimal selection of propellers
-        for the chosen power plant maximizing its efficiency. Suitable selection of batteries and maintaining a full catalogue
-        of equipments also falls under this subsystem.</li>
-        </li>
-      </ul>
-</div>
-<div class="w3-third w3-margin-bottom">
-      <img src="subsystem\propulsion.png" width = 100%>
-</div>
-
-<div class="w3-twothird w3-margin-bottom bod">
-      <ul class="w3-ul w3-border w3-hover-shadow exp">
-        <li class="w3-theme-l2 topic">
-          <p class="w3-xlarge">Marketing</p>
-        </li>
-        <li>Marketing subsytem involves bringing the sponsors for the team. It also takes care of maintaining accounts and other logistics of the team. 
-        The current sponsor for the team is Boeing (from the Aerospace Department)</li> 
-        <ul><li>Monetary association with sponsors</li>
-            <li>Technical association with leading industries</li>
-            <li>Overseeing outside vendors and agencies</li></ul>
-        </li>
-      </ul>
-</div>
-<div class="w3-third w3-margin-bottom">
-      <img src="subsystem\marketing.jpg" width = 100%>
-</div>
-
-</div>
-
-
-<div class="w3-row-padding w3-black">
-    <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
-           Email: rakshak.uavs@gmail.com<br>
-           Phone No: +91-8451855366
-    </div> 
-                                                                
-    <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
-    <div align="center" class='w3-third'>
-        <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="Logo\facebook1.png" width=40px height=40px></a>
-        <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="Logo\youtube1.png" width=40px height=40px></a>
-        <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="Logo\linkedin1.png" width=40px height=40px></a>
-    </div>
-</html>
-</body>
-</html>
+   <head>
+      <title>Team Rakshak</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Autonomous Drone Team">
+      <meta name="keywords" content="auvsi,iitb,rakshak">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="web.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
+         h1,p{font-weight: bold;}
+         body {
+         height:100%;
+         line-height:1.8;
+         background:#f1f1f1;
+         }
+         .topic{background:#838383;color:white;}
+         .exp{background:white;}
+         ul{
+         list-style:square;
+         }
+         h1 {padding:70px 10px 0 10px;text-align:center;font-size: 2.5em;color:red;}
+         .para {line-height:1;text-align:center;font-size: 1.5em;}
+         .w3-bar .w3-button {
+         padding: 16px;
+         }
+         .container {
+         position: relative;
+         font-family: Arial;
+         text-align: center;
+         color: white;
+         }
+         .bottom-left {
+         position: absolute;
+         bottom:0;
+         left: 16px;
+         }	
+         a:active {
+         color: white;
+         background-color: black;
+         }
+         @media only screen and (max-width: 850px) {
+         /* For mobile phones: */
+         [class*="image-set"] {
+         width: 100%;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top">
+         <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+            <img src="logo\logo.png" height='80' width = '80'>&nbsp<img src="logo\iitb.png" height='80' width='80'>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small w3-hide-medium">
+               <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+               <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+               <a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a>
+               <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a>
+               <a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a>
+               <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+         </div>
+      </div>
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <div class="w3-top w3-hide-large">
+         <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+            <img src="logo\logo.png" height='80' width = 80>&nbsp<img src="logo\iitb.png" height='80' width=80>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
+      </div>
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+         <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+         <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
+         <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+         <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
+         <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+      </nav>
+      <script>
+         // Toggle between showing and hiding the sidebar when clicking the menu icon
+         var mySidebar = document.getElementById("mySidebar");
+         
+         function w3_open() {
+             if (mySidebar.style.display === 'block') {
+                 mySidebar.style.display = 'none';
+             } else {
+                 mySidebar.style.display = 'block';
+             }
+         }
+         
+         // Close the sidebar with the close button
+         function w3_close() {
+             mySidebar.style.display = "none";
+         }
+      </script>
+      <br>
+      <div class="container">
+         <img src="cover\subcover.jpg" alt="Subsystem" style="width:1500px;">
+         <div class="bottom-left" style="{color:#FFFFFF;}">
+            <h4 style="font-size: 40px;">Subsystems</h4>
+         </div>
+      </div>
+      <div class="w3-row-padding w3-padding-64">
+         <div class="w3-twothird w3-margin-bottom w3-hover-shadow bod">
+            <ul class="w3-ul w3-border exp">
+               <li class="w3-theme topic">
+                  <p class="w3-xlarge topic">Aerodynamics</p>
+               </li>
+               <li>The Aerodynamic subsystem is responsible for the design and optimisation of the aircraft. This subsystem captures and models in accordance with the user requirements, design, analyse and optimize the aircraft. This subsystem is categorised as such:</li>
+               <ul>
+                  <li><b>Conceptual Sizing</b> - Study the user requirements and accordingly design the nascent framework of the plane.</li>
+                  <li><b>Flight Dynamics</b> - Study the performance, stability and controls of the aircraft and accordingly change the design parameters to best suit the desired objectives.</li>
+                  <li><b>Analysis</b> - Simulate and analyse the aircraft in virtual settings via dedicated softwares and optimize the design while collating with live test results.</li>
+               </ul>
+            </ul>
+         </div>
+         <div class="w3-third w3-margin-bottom">
+            <img src="subsystem\aero2.png" width = 100%>
+            <img src="subsystem\aero1.jpg" width = 100%>
+         </div>
+         <div class="w3-twothird w3-margin-bottom bod">
+            <ul class="w3-ul w3-border w3-hover-shadow exp">
+               <li class="w3-theme-l2 topic">
+                  <p class="w3-xlarge">Structures</p>
+               </li>
+               <li>Structures is responsible for</li>
+               <ul>
+                  <li><b>CAD design</b> - Modelling each component of the plane and assembling them, to help in manufacturing, 
+                     structural and aerodynamic analysis, final assembly. 
+                  </li>
+                  <li><b>Stress analysis</b> - Each component is structurally analyzed to ensure none of them break or deform out of bounds due to the stresses in flight.</li>
+                  <li><b>Material Selection</b> - Appropriate materials are selected to ensure components have enough strength to withstand the loads 
+                     while being as light as possible
+                  </li>
+                  <li><b>Wing load testing</b> - Wings undergo ground testing to ensure they do not break under the large loads they are subjected to in flight</li>
+               </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="w3-third w3-margin-bottom">
+            <img src="subsystem\structures.jpg" width = 100%>
+         </div>
+         <div class="w3-twothird w3-margin-bottom bod">
+            <ul class="w3-ul w3-border w3-hover-shadow exp">
+               <li class="w3-theme-l2 topic">
+                  <p class="w3-xlarge">Software</p>
+               </li>
+               <li>The Software subsystem is responsible for the onboard processing of the images collected during the mission. 
+                  This includes identifying the potential targets, classifying them and geotagging them for future purpose. <br>The subsystem is categorized into:
+               </li>
+               <ul>
+                  <li><b>Image Processing and Machine Learning</b> - Identifying the potential targets and classifying them with precision</li>
+                  <li><b>Parallel Programming</b> - Responsible for faster implementation of the image processing algorithms </li>
+                  <li><b>Interoperability</b> - Responsible for autonomous update of detected targets to the server</li>
+               </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="w3-third w3-margin-bottom">
+            <img src="subsystem\ip.png" width = 100%>
+         </div>
+         <div class="w3-twothird w3-margin-bottom bod">
+            <ul class="w3-ul w3-border w3-hover-shadow exp">
+               <li class="w3-theme-l2 topic">
+                  <p class="w3-xlarge">Controls and Communication</p>
+               </li>
+               <li>
+                  The subsystem conducts regular test for sensors calibration and adjusting the gains 
+                  of the controller. The UAV is given various flight paths during the test assess the performance 
+                  of the UAV and according modify the control parameters to achieve acceptable performance.
+                  Communication is responsible for proper communication between plane and ground control station 
+                  It is also responsible for interoperability i.e, autonomous upload of collected data to remote server.<br>
+                  The aim of this subsystem is to achieve the following for an UAV:
+               </li>
+               <ul>
+                  <li>Autonomous Navigation</li>
+                  <li>Autonomous Takeoff</li>
+                  <li>Autonomous Landing </li>
+                  <li>Obstacle Avoidance</li>
+                  <li>Uninterrupted Communication</li>
+               </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="w3-third w3-margin-bottom">
+            <img src="subsystem\qground.jpg" width = 75%>
+            <img src="subsystem\control.jpg" width = 75%>
+         </div>
+         <div class="w3-twothird w3-margin-bottom bod">
+            <ul class="w3-ul w3-border w3-hover-shadow exp">
+               <li class="w3-theme-l2 topic">
+                  <p class="w3-xlarge">Propulsion</p>
+               </li>
+               <li class="exp">The Propulsion subsystem involves in the selection of a suitable power plant for the UAS(Unmanned Aerial System) in 
+                  accordance with the requirements of the other major subsystems. The subsystem focuses on optimal selection of propellers
+                  for the chosen power plant maximizing its efficiency. Suitable selection of batteries and maintaining a full catalogue
+                  of equipments also falls under this subsystem.
+               </li>
+               </li>
+            </ul>
+         </div>
+         <div class="w3-third w3-margin-bottom">
+            <img src="subsystem\propulsion.jpg" width = 100%>
+         </div>
+         <div class="w3-twothird w3-margin-bottom bod">
+            <ul class="w3-ul w3-border w3-hover-shadow exp">
+               <li class="w3-theme-l2 topic">
+                  <p class="w3-xlarge">Marketing</p>
+               </li>
+               <li>Marketing subsytem involves bringing the sponsors for the team. It also takes care of maintaining accounts and other logistics of the team. 
+                  The current sponsor for the team is Boeing (from the Aerospace Department)
+               </li>
+               <ul>
+                  <li>Monetary association with sponsors</li>
+                  <li>Technical association with leading industries</li>
+                  <li>Overseeing outside vendors and agencies</li>
+               </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="w3-third w3-margin-bottom">
+            <img src="subsystem\marketing.jpg" width = 100%>
+         </div>
+      </div>
+      <div class="w3-row-padding w3-black">
+      <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
+         Email: rakshak.uavs@gmail.com<br>
+         Phone No: +91-8451855366
+      </div>
+      <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
+      <div align="center" class="w3-third" style="padding-top:10px">
+         <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="logo\facebook.png" width=40px height=40px></a>
+         <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="logo\youtube.png" width=40px height=40px></a>
+         <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="logo\linkedin.png" width=40px height=40px></a>
+      </div>
+  </body>
 </html>

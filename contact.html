@@ -1,149 +1,142 @@
 ﻿<!DOCTYPE html>
 <html>
-
-<head>
-<title>Team Rakshak</title>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Autonomous Drone Team">
-<meta name="keywords" content="auvsi,iitb,rakshak">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="web.css">
-<?php include("mail.php"); ?>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
-body,html {
-    height:100%;
-    line-height:1.8;
-}
-
-
-h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:red;}
-
-.para {margin:0 20%;line-height:1;text-align:center;font-size: 1.5em;}
-
-.w3-bar .w3-button {
-    padding: 16px;
-}
-
-a:active {
-    color: white;
-    background-color: black;
-}
-</style>
-
-</head>
-
-<body>
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
-    <img src="logo.png" height='80' width='80'>&nbsp<img src="iitb.png" height='80' width='80'>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a>
-      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a>
-      <a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a>
-      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
-  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
-  <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<script>
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-<br>
-
-<!-- Contact Container -->
- <div class="panel panel-default">
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Address</h3>
-      <p>Contact Us for further details or for sponsorship.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;IIT Bombay</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+91-8451855366</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;email id : rakshak.uavs@gmail.com </p>
-    </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" method="post" action="<?= $_SERVER[PHP_SELF]; ?>">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
+   <head>
+      <title>Team Rakshak</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Autonomous Drone Team">
+      <meta name="keywords" content="auvsi,iitb,rakshak">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="web.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+	  <style>
+	  
+         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
+		 
+         body,html {
+         height:100%;
+         line-height:1.8;
+         }
+		 
+         h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:red;}
+		 
+         .para {margin:0 20%;line-height:1;text-align:center;font-size: 1.5em;}
+		 
+         .w3-bar .w3-button {
+         padding: 16px;
+         }
+		 
+         a:active {
+         color: white;
+         background-color: black;
+         }
+      </style>
+   </head>
+   
+   <body>
+   
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top">
+         <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+            <img src="logo\logo.png" height='80' width='80'>&nbsp<img src="logo\iitb.png" height='80' width='80'>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small w3-hide-medium">
+               <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+               <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+               <a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a>
+               <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a>
+               <a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a>
+               <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+			
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
       </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
+	  
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+         <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+         <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
+         <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+         <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
+         <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+      </nav>
+	  
+      <script>
+         // Toggle between showing and hiding the sidebar when clicking the menu icon
+         var mySidebar = document.getElementById("mySidebar");
+         
+         function w3_open() {
+             if (mySidebar.style.display === 'block') {
+                 mySidebar.style.display = 'none';
+             } else {
+                 mySidebar.style.display = 'block';
+             }
+         }
+         
+         // Close the sidebar with the close button
+         function w3_close() {
+             mySidebar.style.display = "none";
+         }
+      </script>
+	  
+      <br>
+	  
+      <!-- Contact Container -->
+      <div class="panel panel-default">
+      <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+         <div class="w3-row">
+            <div class="w3-col m5">
+               <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+               <h3>Address</h3>
+               <p>Contact Us for further details or for sponsorship.</p>
+               <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;IIT Bombay</p>
+               <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+91-8451855366</p>
+               <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;email id : rakshak.uavs@gmail.com </p>
+            </div>
+            <div class="w3-col m7">
+               <form class="w3-container w3-card-4 w3-padding-16 w3-white" method="post" action="mail.php">
+                  <div class="w3-section">      
+                     <label>Name</label>
+                     <input class="w3-input" type="text" name="Name" required>
+                  </div>
+                  <div class="w3-section">      
+                     <label>Email</label>
+                     <input class="w3-input" type="text" name="Email" required>
+                  </div>
+                  <div class="w3-section">      
+                     <label>Message</label>
+                     <input class="w3-input" type="text" name="Message" required>
+                  </div>
+                  <button type="submit" class="w3-button w3-right w3-theme w3-border w3-hover-shadow">Send</button>
+               </form>
+            </div>
+         </div>
       </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <button type="submit" class="w3-button w3-right w3-theme w3-border w3-hover-shadow">Send</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
- <div class="w3-row-padding w3-black">
-    <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
-           Email: rakshak.uavs@gmail.com<br>
-           Phone No: +91-8451855366
-    </div> 
-                                                                
-<div class="navbar navbar-fixed-bottom">
- <div class="panel-footer"> 
-</div>  <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
-    <div align="center" class='w3-third'>
-        <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="Logo\facebook1.png" width=40px height=40px></a>
-        <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="Logo\youtube1.png" width=40px height=40px></a>
-        <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="Logo\linkedin1.png" width=40px height=40px></a>
-    </div>
-
-</div> </div>
-
+	  
+      <div class="w3-row-padding w3-black">
+         <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
+            Email: rakshak.uavs@gmail.com<br>
+            Phone No: +91-8451855366
+         </div>
+         <div class="navbar navbar-fixed-bottom">
+            <div class="panel-footer"> </div>
+            <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
+            <div align="center" class="w3-third" style="padding-top:10px">
+               <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="logo\facebook.png" width=40px height=40px></a>
+               <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="logo\youtube.png" width=40px height=40px></a>
+               <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="logo\linkedin.png" width=40px height=40px></a>
+            </div>
+         </div>
+      </div>
+	</body>
 </html>

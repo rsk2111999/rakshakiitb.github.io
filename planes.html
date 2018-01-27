@@ -1,189 +1,240 @@
 ﻿<!DOCTYPE html>
 <html>
+   <head>
+      <title>Team Rakshak</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Autonomous Drone Team">
+      <meta name="keywords" content="auvsi,iitb,rakshak">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+      <link rel="stylesheet" href="web.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  
+      <style> 
+	  
+         h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
+		 
+         body,html {
+         height:100%;
+         line-height:1.8;
+         }
+		 
+         pre {
+         display: block;
+         font-family: arial;
+         white-space: pre;
+         margin: 1em 0;
+         } 
+		 
+         h2 {background:#838383;color:white;text-align:center;border-radius: 25px;}
+		 
+         h3 {background:#838383;color:white;text-align:center;border-radius: 25px;}
+		 
+         body {background:#f1f1f1;font-size:14;}
+		 
+         h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:#4f5aae;}
+		 
+         .para {margin:0 20%;line-height:1.25;text-align:center;font-size: 1.5em;font-family:Helvetica;}
+		 
+         .w3-bar .w3-button {
+         padding: 16px;
+         }
+		 
+         a:active {
+         color: white;
+         background-color: black;
+         }
+		 
+         .container {
+         position: relative;
+         font-family: Arial;
+         text-align: center;
+         color: white;
+         }
+		 
+         .bottom-left {
+         position: absolute;
+         bottom:0;
+         left: 16px;
+         }	
+		 
+         .container1 {
+         position: relative;
+         width: 100%;
+         }
+		 
+         .image {
+         display: block;
+         width: 100%;
+         height: auto;
+         padding:10px;
+         }
+		 
+         .overlay {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 110%;
+         width: 85%;
+         opacity: 0;
+         transition: 0.75s ease;
+         background-color: #545454;
+         }
+		 
+         .container1:hover .overlay {
+         opacity: 0.75;
+         border-radius:50px;
+         }
+		 
+         .text {
+		 color: white;
+         font-size: 11px;
+         position: absolute;
+         top: 50%;
+         left: 45%;
+         transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         }
+      </style>
+	  
+   </head>
+   
+   <body>
+   
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top">
+         <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+            <img src="logo\logo.png" height='80' width='80'>&nbsp<img src="logo\iitb.png" height='80' width='80'>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-medium w3-hide-small">
+               <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+               <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+               <a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a>
+               <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a>
+               <a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a>
+               <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
+      </div>
+	  
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+         <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+         <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
+         <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+         <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
+         <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+      </nav>
+	  
+      <script>
+         // Toggle between showing and hiding the sidebar when clicking the menu icon
+         var mySidebar = document.getElementById("mySidebar");
+         
+         function w3_open() {
+             if (mySidebar.style.display === 'block') {
+                 mySidebar.style.display = 'none';
+             } else {
+                 mySidebar.style.display = 'block';
+             }
+         }
+         
+         // Close the sidebar with the close button
+         function w3_close() {
+             mySidebar.style.display = "none";
+         }
+      </script>
+	  
+      <br>
+	  
+      <div class="container">
+         <img src="cover\planecover.jpg" alt="Planes" style="width:1500px;">
+         <div class="bottom-left" style="{color:#D5F5FF;}">
+            <h4 style="font-size: 40px;">Our Planes</h4>
+         </div>
+      </div>
+      <br><br>
+	  
+      <div class="w3-row">
+         <div class="w3-third w3-container">
+            <div class="container1">
+               <img src="planes\skywalker.jpg" width="85%" alt="Avatar" class="w3-circle w3-hover-opacity img1" class="image">
+               <div class="overlay">
+                  <div class="text">SKYWALKER<br>Built in 2017, a recent addition to the Team's plane collection. Designed for the AUVSI-SUAS competition, the plane has an endurance of 30-40 minutes of completely autonomous operation of object detection and classification, interoperability, waypoint navigation, flight, take-off and landing. It has a take-off gross weight of 7.5Kgs with a cruise speed of 12 m/s.</div>
+               </div>
+            </div>
+			<br>
+			<h3>SKYWALKER</h3>
+         </div>
+         <div class="w3-third w3-container">
+            <div class="container1">
+               <img src="planes\sandy2.jpg" width="85%" alt="Avatar" class="w3-circle w3-hover-opacity img1" class="image">
+               <div class="overlay">
+                  <div class="text">SANDY 2.0<br>A variant of Sandy with the same role as Sandy 1.0 but with twin motors and a camera mounted at front to test the image capture features, and is one of the finest planes built in the team's history. It is a highly stable plane but has capability of vertical loop, roll etc manoeuvers when let loose, thanks to its twin motors. It has a take-off gross weight of 2.25 Kgs and a cruise speed of 12 m/s.</div>
+               </div>
+            </div>
+			<br>
+			<h3>SANDY 2.0</h3>
+         </div>
+         <div class="w3-third w3-container">
+            <div class="container1">
+               <img src="planes\sandy.jpg" width="85%" alt="Avatar" class="w3-circle w3-hover-opacity img1" class="image">
+               <div class="overlay">
+                  <div class="text">SANDY<br>A relatively small plane used for testing of individual components. It saw change in airfoil, from thin airfoil to thicker airfoil, compared to all predecessors. This plane was our first test dummy for autonomous flying and has provided excellent results to proceed autonomy to bigger plane.</div>
+               </div>
+			   </div>
+			   <br>
+			<h3>SANDY</h3>
+         </div>
+      </div>
+      <br><br><br>
+      <div class="w3-row">
+         <div class="w3-third w3-container">
+            <div class="container1">
+               <img src="planes\smokey.jpg" width="85%" alt="Avatar" class="w3-circle w3-hover-opacity img1" class="image">
+               <div class="overlay">
+                  <div class="text">SMOKEY<br>Built in 2015, this plane was the first to have the capability of an autonomous system ingrained within. It was designed for the AUVSI competition in the year 2015. It has a take-off gross weight of 5 Kgs and a cruise speed of 12 m/s.</div>
+               </div>
+            </div>
+			<br>
+			<h3>SMOKEY</h3>
+         </div>
+         <div class="w3-third w3-container">
+            <div class="container1">
+               <img src="planes\saeplane.jpg" width="85%" alt="Avatar" class="w3-circle w3-hover-opacity img1" class="image">
+               <div class="overlay">
+                  <div class="text">SAE WALA<br>Built in 2015, this plane represented our team in SAE-2015 competition. A stable, robust and payload efficient plane, it allowed us to win 7th place in design and 12th place overall. It has an empty weight of 4.5 Kgs and lifted a payload of 2 Kgs.</div>
+               </div>
+            </div>
+			<br>
+			<h3>SAE WALA</h3>
+         </div>
+      </div>
+      </div>
+      <br><br>
+	  
+      <div class="w3-row-padding w3-black">
+      <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
+         Email: rakshak.uavs@gmail.com<br>
+         Phone No: +91-8451855366
+      </div>
+      <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
+      <div align="center" class="w3-third" style="padding-top:10px">
+         <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="logo\facebook.png" width=40px height=40px></a>
+         <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="logo\youtube.png" width=40px height=40px></a>
+         <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="logo\linkedin.png" width=40px height=40px></a>
+      </div>
 
-<head>
-<title>Team Rakshak</title>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Autonomous Drone Team">
-<meta name="keywords" content="auvsi,iitb,rakshak">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<;ink rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-<link rel="stylesheet" href="web.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
-body,html {
-    height:100%;
-    line-height:1.8;
-}
-
-pre {
-    display: block;
-    font-family: arial;
-    white-space: pre;
-    margin: 1em 0;
-} 
-
-h2 {background:#838383;color:white;text-align:center;border-radius: 25px;}
-h3 {background:#838383;color:white;text-align:center;border-radius: 25px;}
-body {background:#f1f1f1;font-size:14;}
-
-h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:#4f5aae;}
-
-
-.para {margin:0 20%;line-height:1.25;text-align:center;font-size: 1.5em;font-family:Helvetica;}
-
-.w3-bar .w3-button {
-    padding: 16px;
-}
-
-a:active {
-    color: white;
-    background-color: black;
-}
-</style>
-
-</head>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
-    <img src="logo.png" height='80' width='80'>&nbsp<img src="iitb.png" height='80' width='80'>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a>
-      <a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a>
-      <a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a>
-      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
-  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
-  <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<script>
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-
-<br><br><br><br>
-<img src="plane2.jpg" width=100%>
-
-<h2 align="center">SAE</h2>
-<div class="w3-row">
-  <div class="w3-third w3-container">
-    <img src="planes\second.jpg" width="100%">
-  </div>
-  <div class="w3-third w3-container">
-    <h3>Perfomance</h3><pre>
-    Ground Roll Distance : 100 m
-    Cruise Speed             : 18 m/s
-    Stall Speed                : 9 m/s 
-  </div>
-  <div class="w3-third w3-container">
-    <h3>Dimensions</h3><pre>
-    Length        : 0.96 m
-    Wing Span : 3 m/s
-    Wing Area  : 1.45 m<sup>2</sup> 
-    Weight       : 13 kg
-  </div>
-</div>
-
-<h2 align="center">Sandy 2.0</h2>
-<div class="w3-row">
-  <div class="w3-third w3-container">
-    <img src="planes\sandy2.0.jpg" width="100%">
-  </div>
-  <div class="w3-third w3-container">
-    <h3>Perfomance</h3><pre>
-    Ground Roll Distance : 80 m   
-    Cruise Speed             : 12 m/s 
-    Stall Speed                : 8 m/s  
-    T/W                           : 0.8 
-  </div>
-  <div class="w3-third w3-container">
-    <h3>Dimensions</h3><pre>
-    Length        : 1.45 m   
-    Wing Span : 1.38 m/s
-    Wing Area  : 0.32 m<sup>2</sup>  
-    Weight        : 2 kg  
-  </div>
-</div>
-
-<h2 align="center">Skywalker</h2>
-<div class="w3-row">
-  <div class="w3-third w3-container">
-    <img src="planes\skywalker.jpg" width="100%">
-  </div>
-  <div class="w3-third w3-container">
-    <h3>Perfomance</h3>
-<pre>
-    Ground Roll Distance : 100 m 
-    Cruise Speed              : 12 m/s
-    Stall Speed                 : 9 m/s
-    T/W                            : 0.8 
-  </div>
-  <div class="w3-third w3-container">
-    <h3>Dimensions</h3><pre>
-    Length        : 2 m
-    Wing Span : 2.9 m/s
-    Wing Area  : 1.38 m<sup>2</sup> 
-    Weight        : 8 kg</pre>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-black">
-    <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
-           Email: rakshak.uavs@gmail.com<br>
-           Phone No: +91-8451855366
-    </div> 
-                                                                
-    <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
-    <div align="center" class='w3-third'>
-        <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="Logo\facebook1.png" width=40px height=40px></a>
-        <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="Logo\youtube1.png" width=40px height=40px></a>
-        <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="Logo\linkedin1.png" width=40px height=40px></a>
-    </div>
-</html>
 </body>
-</html>
 </html>

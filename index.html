@@ -1,300 +1,286 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<title>Team Rakshak</title>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Autonomous Drone Team">
-<meta name="keywords" content="auvsi,iitb,rakshak">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="web.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<style>
-		body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
-body,html {
-    height:100%;
-    line-height:1.8;
-   background-color:#f1f1f1;
-}
-
-
-h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:red;}
-
-.para {margin:0 10%;line-height:1.25;text-align:center;font-size: 1.5em;font-family:Helvetica;}
-
-.w3-bar .w3-button {
-    padding: 16px;
-}
-
-a:active {
-    color: white;
-    background-color: black;
-	}
-	
-		/* Importing Amaranth Font for menu text */
-		header, a, img, li{
-			transition: all 1s;
-			-moz-transition: all 1s; /* Firefox 4 */
-			-webkit-transition: all 1s; /* Safari and Chrome */
-			-o-transition: all 1s; /* Opera */
-		}
-
-		/* Basic layout */
-		
-		ul{
-			list-style-type: none;
-			float: right;
-		}
-
-		li{
-			display: inline;
-			float: left;
-		}
-
-		img.logo{
-			float: left;
-		}
-
-
-		nav{
-			width: 960px;
-			margin: 0 auto;
-		}
-
-		header{
-			background: white;
-			border-bottom: 1px solid #aaaaaa;
-			float: left;
-			width: 100%;
-			position: fixed;
-			z-index: 10;
-		}
-
-			header a{
-				color: white;
-				text-decoration: none;
-				text-transform: uppercase;
-			}
-
-			header a.active, header a:hover{
-				color: #3d3d3d;
-			}
-
-			/* Sizes for the bigger menu */
-			header.large{
-				height: 120px;
-			}
-
-			header.large img{
-				width: 115px;
-				height: 115px;
-			}
-
-
-			/* Sizes for the smaller menu */
-			header.small{ 
-				height: 70px; 
-			}
-
-			header.small img{ 
-				width: 80px; 
-				height: 80px; 
-				margin-top: -10px; 
-			}
-
-			header.small li{ 
-				margin-top: -10px; 
-			}
-
-</style>
-<script type="text/javascript">
-		$(document).on("scroll",function(){
-			if($(document).scrollTop()>100){ 
-				$("header").removeClass("large").addClass("small");
-				}
-			else{
-				$("header").removeClass("small").addClass("large");
-				}
-			});
-	</script>
-</head>
-<body>
-
-<!-- Navbar (sit on top) -->
-<header class="large">
-        <img class="logo" src="logo.png"/>
-		<img class ='logo' src="iitb.png">
-		<nav class="w3-hide-small w3-hide-medium">
-			<ul >
-		<li><a href="homefinal.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a></li>
-                <li><a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a></li>
-                <li><a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a></li>
-                <li><a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a></li>
-                <li><a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a></li>
-                <li><a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a></li>
-			</ul>
-		</nav>
-	
-
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
-	
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
-  <a href="homefinal.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
-  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
-  <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-</header>
-
-<script>
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-<br>
-<!-- Slideshow -->
-<div class="slideshow-container" style="padding:90px 0 0 0;">
+   <head>
+      <title>Team Rakshak</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Autonomous Drone Team">
+      <meta name="keywords" content="auvsi,iitb,rakshak">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="web.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  
+      <style>
+	  
+         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway",sans-serif}
+		 
+         body,html {
+         height:100%;
+         line-height:1.8;
+         background-color:#f1f1f1;
+         }
+		 
+         h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:red;}
+		 
+         .para {margin:0 10%;line-height:1.25;text-align:center;font-size: 1.5em;font-family:Helvetica;}
+		 
+         .w3-bar .w3-button {
+         padding: 16px;
+         }
+		 
+         a:active {
+         color: white;
+         background-color: black;
+         }
+         
+		 /* Importing Amaranth Font for menu text */
+         header, a, img, li{
+         transition: all 1s;
+         -moz-transition: all 1s; /* Firefox 4 */
+         -webkit-transition: all 1s; /* Safari and Chrome */
+         -o-transition: all 1s; /* Opera */
+         }
+         
+		 /* Basic layout */
+         ul{
+         list-style-type: none;
+         float: right;
+         }
+         
+		 li{
+         display: inline;
+         float: left;
+         }
+         
+		 img.logo{
+         float: left;
+         }
+         
+		 nav{
+         width: 960px;
+         margin: 0 auto;
+         }
+         
+		 header{
+         background: white;
+         border-bottom: 1px solid #aaaaaa;
+         float: left;
+         width: 100%;
+         position: fixed;
+         z-index: 10;
+         }
+         
+		 header a{
+         color: white;
+         text-decoration: none;
+         text-transform: uppercase;
+         }
+         
+		 header a.active, header a:hover{
+         color: #3d3d3d;
+         }
+         
+		 /* Sizes for the bigger menu */
+         header.large{
+         height: 120px;
+         }
+         
+		 header.large img{
+         width: 115px;
+         height: 115px;
+         }
+         
+		 /* Sizes for the smaller menu */
+         header.small{ 
+         height: 70px; 
+         }
+         
+		 header.small img{ 
+         width: 80px; 
+         height: 80px; 
+         margin-top: -10px; 
+         }
+         
+		 header.small li{ 
+         margin-top: -10px; 
+         }
+		 
+      </style>
+	  
+      <script type="text/javascript">
+         $(document).on("scroll",function(){
+         	if($(document).scrollTop()>100){ 
+         		$("header").removeClass("large").addClass("small");
+         		}
+         	else{
+         		$("header").removeClass("small").addClass("large");
+         		}
+         	});
+      </script>
+   </head>
    
-<div class="mySlides fade">
-    <img src="Home_page\5.jpg" style="width:100%">
-    
-  </div>
+   <body>
+      
+	  <!-- Navbar (sit on top) -->
+      <header class="large">
+         <img class="logo" src="logo\logo.png"/>
+         <img class ='logo' src="logo\iitb.png">
+         <nav class="w3-hide-small w3-hide-medium">
+            <ul >
+               <li><a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a></li>
+               <li><a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a></li>
+               <li><a href="subsystem.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SUBSYSTEMS</a></li>
+               <li><a href="gallery.html" class="w3-bar-item w3-button"><i class="fa fa-picture-o"></i> GALLERY</a></li>
+               <li><a href="planes.html" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> PLANES</a></li>
+               <li><a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a></li>
+            </ul>
+         </nav>
 
- <div class="mySlides fade">
-    <img src="Home_page\12.jpg" style="width:100%">
-    
-  </div>
+         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+         <i class="fa fa-bars"></i>
+         </a>
+         </div>
+         </div>
+      
+	  <!-- Sidebar on small screens when clicking the menu icon -->
+         <nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">&times;</a>
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+            <a href="subsystem.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBSYSTEMS</a>
+            <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+            <a href="planes.html" onclick="w3_close()" class="w3-bar-item w3-button">PLANES</a>
+            <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+         </nav>
+      </header>
 
-  <div class="mySlides fade">
-    <img src="Home_page\7.jpg" style="width:100%">
-    
-  </div>
+      <script>
+         // Toggle between showing and hiding the sidebar when clicking the menu icon
+         var mySidebar = document.getElementById("mySidebar");
+         
+         function w3_open() {
+             if (mySidebar.style.display === 'block') {
+                 mySidebar.style.display = 'none';
+             } else {
+                 mySidebar.style.display = 'block';
+             }
+         }
+         
+         // Close the sidebar with the close button
+         function w3_close() {
+             mySidebar.style.display = "none";
+         }
+      </script>
 
-  <div class="mySlides fade">
-    <img src="Home_page\Teampic.jpg" style="width:100%">
-    
-  </div>
+      <br>
 
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-<div class="w3-row"><br>
-<div class="w3-half">
-   <div class="w3-center">
-     <img src="logo.png" width = "30%">
-   </div>
-<h1>About Rakshak</h1>
-<svg height="4" width="100%">
-  <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
-</svg>
-
-<div class="para">
-Team Rakshak is an IIT Bombay student initiative to develop a fleet of robust Unmanned Aerial Vehicles (UAVs) to support
-Search and Rescue Operations (SRO) in the event of disaster. These aircrafts can provide relief 
-measures in disaster stricken area (e.g.: Landslide,Flood,Earthquake), can be used for surveys and mapping of cities and 
-conservation of wildlife with slight modifications. Our design efficiently tackles the above problems 
-in a cost effective manner without comprising on human safety.</div>
-
-</div>
-
-<div class="w3-half">
-<div class="w3-center">
-<img src="auv.jpg" width = "30%"></div>
-<h1>AUVSI-SUAS</h1>
-<svg height="4" width="100%">
-  <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
-</svg>
-
-<div class="para">The AUVSI SUAS Competition is designed to foster interest in Unmanned Aerial Systems (UAS), 
-stimulate interest in UAS technologies and careers, and to engage students in a challenging UAS mission. 
-The competition requires students to design, integrate, report on, and demonstrate a UAS capable of autonomous 
-flight and navigation, remote sensing via onboard payload sensors, and execution of a specific set of tasks.</div>
-
-</div>
-
-<svg height="2" width="100%">
-  <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-</svg>
-<div class="w3-row-padding w3-black">
-    <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
-           Email: rakshak.uavs@gmail.com<br>
-           Phone No: +91-8451855366
-    </div> 
-                                                                
-    <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
-    <div align="center" class='w3-third'>
-        <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="logo\facebook1.png" width=40px height=40px></a>
-        <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="logo\youtube1.png" width=40px height=40px></a>
-        <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="logo\linkedin1.png" width=40px height=40px></a>
-    </div>
+      <!-- Slideshow -->
+      <div class="slideshow-container" style="padding:90px 0 0 0;">
+         <div class="mySlides fade">
+            <img src="index\saetakeoff.jpg" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="index\sae.jpg" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="index\skywalkerfront.jpg" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+            <img src="index\teampic.jpg" style="width:100%">
+         </div>
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span> 
+         <span class="dot" onclick="currentSlide(2)"></span> 
+         <span class="dot" onclick="currentSlide(3)"></span> 
+         <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+	  
+      <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1} 
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none"; 
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block"; 
+           dots[slideIndex-1].className += " active";
+         }
+      </script>
+	  
+      <div class="w3-row">
+      <br>
+	  
+      <div class="w3-half">
+         <div class="w3-center">
+            <img src="logo\logo.png" width = "30%">
+         </div>
+         <h1>About Rakshak</h1>
+         <svg height="4" width="100%">
+            <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+         </svg>
+         <div class="para">
+            Team Rakshak is an IIT Bombay student initiative to develop a fleet of robust Unmanned Aerial Vehicles (UAVs) to support
+            Search and Rescue Operations (SRO) in the event of disaster. These aircrafts can provide relief 
+            measures in disaster stricken area (e.g.: Landslide,Flood,Earthquake), can be used for surveys and mapping of cities and 
+            conservation of wildlife with slight modifications. Our design efficiently tackles the above problems 
+            in a cost effective manner without comprising on human safety.
+         </div>
+      </div>
+	  
+      <div class="w3-half">
+         <div class="w3-center">
+            <img src="logo\auv.jpg" width = "30%">
+         </div>
+         <h1>AUVSI-SUAS</h1>
+         <svg height="4" width="100%">
+            <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+         </svg>
+         <div class="para">The AUVSI SUAS Competition is designed to foster interest in Unmanned Aerial Systems (UAS), 
+            stimulate interest in UAS technologies and careers, and to engage students in a challenging UAS mission. 
+            The competition requires students to design, integrate, report on, and demonstrate a UAS capable of autonomous 
+            flight and navigation, remote sensing via onboard payload sensors, and execution of a specific set of tasks.
+         </div>
+      </div>
+	  
+      <svg height="2" width="100%">
+         <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+      </svg>
+	  
+      <div class="w3-row-padding w3-black">
+      <div align="center" class="w3-third" style="font-color:white;"><b>Contact Us :</b><br>
+         Email: rakshak.uavs@gmail.com<br>
+         Phone No: +91-8451855366
+      </div>
+      <div align="center" class="w3-third" style="font-color:white;">&copyTeam Rakshak, IIT Bombay</div>
+      <div align="center" class="w3-third" style="padding-top:10px">
+         <a href="https://www.facebook.com/TeamRakshak/" target="_blank"><img src="logo\facebook.png" width=40px height=40px></a>
+         <a href="https://www.youtube.com/channel/UC-kEFYoL9ZGBo-pFYtbozDw/featured" target="_blank"><img src="logo\youtube.png" width=40px height=40px></a>
+         <a href="https://www.linkedin.com/company/18257289/" target="_blank"><img src="logo\linkedin.png" width=40px height=40px></a>
+      </div>
+	</body>
 </html>
-
