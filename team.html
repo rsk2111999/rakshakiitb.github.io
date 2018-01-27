@@ -55,13 +55,23 @@ h1 {padding:10px 10px;text-align:center;font-size: 2.5em;color:red;}
   .img1 {
     width: 50%; // Override width to show only one image in a row on smaller screens
   }
-
+    }
 @media (max-width: 600px) {
   .img2 {
     width: 50%; // Override width to show only one image in a row on smaller screens
   }
-
+    }
+.img3 {
+    display: inline-block;
+    width: 20%; // Show 4 images in a row normally
+    height: auto;
 }
+
+@media (max-width: 600px) {
+  .img3 {
+    width: 50%; // Override width to show only one image in a row on smaller screens
+  }
+    }
 a:active {
     color: white;
     background-color: black;
@@ -121,13 +131,13 @@ function w3_close() {
 }
 </script>
 
-<br>
+<br><br>
 <!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-container w3-center" id="team" style="padding-top:32">
 
 
 <h3><b>TEAM LEADER<b></h3>
-<img src="Team\kedia.jpg" alt="Picture" width = "25%"class="w3-circle w3-hover-opacity">
+<img src="Team\kedia.jpg" alt="Picture" class="w3-circle w3-hover-opacity img3">
 <h3>Krishna Kumar Kedia</h3>
 <div class="w3-row"><br>
 
@@ -333,7 +343,7 @@ function w3_close() {
 </div>
 
 <h3><b>FACULTY ADVISOR<b></h3>
-<img src="Team\Pant.png" alt="Picture" width = "25%"class="w3-circle w3-hover-opacity">
+<img src="Team\Pant.png" alt="Picture" class="w3-circle w3-hover-opacity img3">
 <p>Prof. Rajkumar Pant</p>
 <div class="w3-row"><br>
 
